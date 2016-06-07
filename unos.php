@@ -2,21 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Automobili</title>
+    <title>Mobitel</title>
 </head>
 
 <body>
-<h1>
-    Automobili
+<h1 style="color: chartreuse; text-align: center; font-family: 'Abyssinica SIL'">
+    Mobitel
 </h1>
 
 <p>
 <form action="insert.php" method="post">
-    Registracija:<br>
-    <input type="text" name="registracija"><br>
-    Ime:<br>
-    <input type="text" name="ime"><br>
-    <input type="submit" value="Unesi automobil">
+    Naziv:<br>
+    <input type="text" name="naziv"><br>
+    O mobitelu:<br>
+    <input type="text" name="o_mobitelu"><br>
+    Cijena:<br>
+    <input type="text" name="cijena"><br>
+    <input type="submit" value="Unesi novi mobitel">
 </form>
 </p>
 </body>

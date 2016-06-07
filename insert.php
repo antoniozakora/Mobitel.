@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Automobili</title>
+    <title>Mobitel</title>
 </head>
 
 <body>
-<h1>
-    Automobili
+<h1 style="color: chartreuse; text-align: center; font-family: 'Abyssinica SIL'">
+    Mobitel
 </h1>
 
 <p>
     <?php
-    $sql = "INSERT INTO automobili (registracija, ime) VALUES ('" . $_POST['registracija']. "','" . $_POST['ime']. "')";
+    $sql = "INSERT INTO Mobitel (naziv, o_mobitelu, cijena) VALUES ('" . $_POST['naziv']. "','" . $_POST['o_mobitelu']."','". $_POST['cijena']. "')";
     $result = $conn->query($sql);
-    echo ('Automobil je unesen! <br>');
-    echo ('<a href="index.php">Povratak na prikaz automobila </a>')
+    echo ('Novi mobitel je unesen! <br>');
+    echo ('<a href="index.php">Povratak na prikaz novih mobitela! </a>')
     ?>
 </p>
 </body>
